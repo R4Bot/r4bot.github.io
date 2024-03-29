@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R4BOT</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .banner {
+    position: relative;
+    height: 100px; /* Altura del banner para dispositivos de escritorio */
+    background-image: url('scr/banner.jpg'); /* Cambia 'ruta/de/banner.jpg' por la ruta de tu imagen de banner */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; /* Altura de la imagen de portada para dispositivos de escritorio */
+    object-fit: cover;
+    z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+  }
+
+  .container {
+    position: relative;
+    height: calc(125% - 100px); /* Ajustamos la altura del contenedor para dispositivos de escritorio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Alinea los elementos en columna */
+  }
+
+  h1 {
+    color: rgb(14, 147, 224);
+    font-size: 3em;
+    margin: 0;
+  }
+
+  p {
+    color: #818181; /* Color del texto de la descripción */
+    font-size: 1.2em;
+    margin: 10px; /* Añade margen alrededor del texto descriptivo */
+    max-width: 95%; /* Establece el ancho máximo para evitar que el texto sea demasiado largo */
+    text-align: center; /* Centra el texto */
+  }
+
+  a.button {
+    display: inline-block;
+    background-color: rgb(15, 178, 207); /* Color celeste */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-top: 20px; /* Añade margen superior al botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+
+  a.button:hover {
+    background-color: rgb(14, 167, 194); /* Color celeste más claro al pasar el ratón */
+  }
+
+  a.blue-button {
+    display: inline-block;
+    background-color: rgb(14, 116, 207); /* Color azul */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-top: 20px; /* Añade margen superior al botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+
+  a.blue-button:hover {
+    background-color: rgb(12, 95, 172); /* Color azul más claro al pasar el ratón */
+  }
+
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 600px) {
+    .banner {
+      height: 70px; /* Reducimos la altura del banner para dispositivos móviles */
+    }
+
+    .cover-image {
+      height: 200px; /* Reducimos la altura de la imagen de portada para dispositivos móviles */
+    }
+
+    .container {
+      height: calc(100% - 70px); /* Ajustamos la altura del contenedor para dispositivos móviles */
+    }
+
+    h1 {
+      font-size: 2em; /* Reducimos el tamaño del texto para dispositivos móviles */
+    }
+
+    p {
+      font-size: 1em; /* Reducimos el tamaño del texto de la descripción para dispositivos móviles */
+      margin: 5px; /* Reducimos el margen para dispositivos móviles */
+      max-width: 90%; /* Ajustamos el ancho máximo para dispositivos móviles */
+    }
+
+    a.button {
+      font-size: 1.2em; /* Reducimos el tamaño del botón para dispositivos móviles */
+    }
+
+    a.blue-button {
+      font-size: 1.2em; /* Reducimos el tamaño del botón azul para dispositivos móviles */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="banner"></div>
+
+<img src="banner.jpg" alt="Portada" class="cover-image">
+
+<div class="container">
+  <div>
+    <h1>R4BOT</h1>
+    <p>La diversión y moderación que buscas para tu servidor está asegurada con R4BOT</p>
+    <a href="https://discord.com/oauth2/authorize?client_id=1222283756874760294&permissions=8&scope=bot+applications.commands" class="button">Invita a R4BOT</a> <!-- Cambia 'enlace_de_discord' por el enlace a tu servidor de Discord -->
+    <a href="https://discord.com/oauth2/authorize?client_id=1222283756874760294&permissions=8&scope=bot+applications.commands" class="blue-button">Soporte</a> <!-- Cambia 'enlace_de_soporte' por el enlace a tu página de soporte -->
+  </div>
+</div>
+
+</body>
+</html>
